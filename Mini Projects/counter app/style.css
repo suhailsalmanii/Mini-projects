@@ -1,0 +1,92 @@
+/* Removes default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centers the counter container in the middle of the screen */
+body {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styles the white card holding the counter */
+.counter-container {
+  background-color: #222;
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Styles the large zero */
+.counter-value {
+  display: block;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Spaces the buttons evenly */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Base styles applied to all three buttons */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Adds a small press effect when a button is clicked */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Specific colors and hover effects for each button */
+.btn-decrease {
+  background-color: #e74c3c; /* Red */
+}
+.btn-decrease:hover {
+  background-color: #c0392b;
+}
+
+.btn-reset {
+  background-color: #34495e; /* Dark Gray */
+}
+.btn-reset:hover {
+  background-color: #2c3e50;
+}
+
+.btn-increase {
+  background-color: #2ecc71; /* Green */
+}
+.btn-increase:hover {
+  background-color: #27ae60;
+}
